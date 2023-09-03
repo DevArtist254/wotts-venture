@@ -1,0 +1,66 @@
+@use '../abs/var.scss'as *;
+
+nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--clr-400);
+    text-align: center;
+    padding: 2rem 3rem;
+    text-decoration: none;
+    font-size: var(--fs-400);
+    font-family: $font-fam-pri;
+}
+
+.topnav a:hover {
+    background-color: var(--clr-200);
+    color: var(--clr-400);
+}
+
+.topnav .active {
+    font-size: var(--fs-500);
+}
+
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 180rem) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 180rem) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

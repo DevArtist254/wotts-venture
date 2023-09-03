@@ -1,0 +1,32 @@
+@use '../abs/response.scss'as*;
+
+.lp-main {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+
+    &__img {
+        width: 50%;
+        height: 100%;
+
+        @include respond(phone) {
+            width: 0;
+        }
+    }
+
+    &__text-b {
+        width: 50%;
+        height: 100%;
+        padding-left: 2rem;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

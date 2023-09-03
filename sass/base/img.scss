@@ -1,0 +1,87 @@
+@use '../abs/bdg.scss'as *;
+
+.ro-250 {
+    background-image: url(./images/250-ltrs-per-hr-reverse-osmosis.png);
+    @include bdgImg;
+}
+
+.ro-500 {
+    @include bdgImg;
+    background-image: url(./images/500-ltrs-per-hr-reverse-osmosis.png);
+}
+
+.ro-1000-atm {
+    @include bdgImg;
+    background-image: url(./images/1000-ltrs-per-hr-reverse-osmosis-ATM.png);
+}
+
+.ro-1000-bp {
+    @include bdgImg;
+    background-image: url(./images/1000-ltrs-per-hr-reverse-osmosis-bottling-plant.png);
+}
+
+.ro-1000 {
+    @include bdgImg;
+    background-image: url(./images/1000-ltrs-per-hr-reverse-osmosis.png);
+}
+
+.ro-1250 {
+    @include bdgImg;
+    background-image: url(./images/1250-ltrs-per-hr-reverse-osmosis.png);
+}
+
+.ro-1500 {
+    @include bdgImg;
+    background-image: url(./images/1500-ltrs-per-hr-reverse-osmosis-plant.png);
+}
+
+.ro-3000 {
+    @include bdgImg;
+    background-image: url(./images/3000-ltrs-per-hr-reverse-osmosis.png);
+}
+
+.ro-5000 {
+    @include bdgImg;
+    background-image: url(./images/5000-ltrs-per-hr-reverse-osmosis.png);
+}
+
+.milk-pp {
+    @include bdgImg;
+    background-image: url(./images/milk-processing-plant.png);
+}
+
+.wb {
+    @include bdgImg;
+    background-image: url(./images/water-business.png);
+}
+
+.uf {
+    @include bdgImg;
+    background-image: url(./images/water-purifier-machines-1.jpg);
+}
+
+.ro-cover {
+    @include bdgImg;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://marlo-inc.com/sites/default/files/styles/news_full/public/2020-05/blog-main.jpg?itok=nhkOJrMi);
+}
+
+.ro-cover-1 {
+    @include bdgImg;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/delta-ro-system-4-scaled-1800x0-c-center.webp);
+}
+
+.ro-cover-2 {
+    @include bdgImg;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/water-treatment-station-1536x1026.webp);
+}
+
+
+.milk-pp-1 {
+    @include bdgImg;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/Milk-Processing-Production-Line.jpg);
+}
+
+.milk-pp-2 {
+    @include bdgImg;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/Milk-Processing-Machinery.jpg);
+}

@@ -1,0 +1,89 @@
+@use '../abs/font.scss'as *;
+@use '../abs/color.scss'as *;
+@use '../abs/response.scss'as *;
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ol,
+ul {
+    padding: 2rem;
+}
+
+img {
+    width: 75%;
+    height: 100%;
+    margin-left: 3rem;
+}
+
+.util-pad-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+:root {
+
+    @each $sect,
+    $color in $colors {
+
+        @each $clr,
+        $val in $color {
+            --#{$sect}-#{$clr}: #{$val};
+        }
+    }
+
+
+    @each $size,
+    $fonts in $font-size {
+        @if $size==small {
+
+            @each $fs,
+            $val in $fonts {
+                --fs-#{$fs}: #{$val};
+            }
+        }
+
+        @include respond(phone) {
+            @if $size==small {
+
+                @each $fs,
+                $val in $fonts {
+                    --fs-#{$fs}: #{$val};
+                }
+            }
+        }
+
+
+        @include respond(tab-land) {
+            @if $size==tab-land {
+
+                @each $fs,
+                $val in $fonts {
+                    --fs-#{$fs}: #{$val};
+                }
+            }
+
+        }
+    }
+}
+
+.cd {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cd li {
+    width: 300px;
+    margin-bottom: 2rem;
+}
